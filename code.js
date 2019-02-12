@@ -83,4 +83,11 @@ function dateCheck(from, to, check) {
   return false;
 }
 
+function zero(n) {
+  if (n < 10) {
+    return parseInt("0"+n);
+  }
+  return n;
+}
+
 $.getJSON("ZoneInfo.json", gen);
