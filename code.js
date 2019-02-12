@@ -63,7 +63,7 @@ const PlayerZone = function (i) {
     ret += now.getMinutes() / 60;
     let dmp = ret - Math.floor(ret)
     ret = Math.floor(ret);
-    return `${ret}:${format(Math.floor(dmp*60), 00)}`;
+    return `${ret}:${zero(Math.floor(dmp*60), 00)}`;
   }
   this.changeI = () => {
     thisI = this.i
